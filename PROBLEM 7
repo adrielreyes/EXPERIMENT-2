@@ -1,0 +1,38 @@
+// Problem 7
+// Adriel Brian L. Reyes
+// 1 - 12 
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int sum = 0, a, rpt;
+
+cout << "ENTER A NUMBER: ";
+cin >> a;
+
+for (;;)
+{
+    if (a > 0)
+    {
+    sum = 0;
+    
+    for (rpt = 1; rpt <= a; rpt++)
+    {
+    sum = sum + rpt;
+    }
+    cout << "THE SUM OF ALL WHOLE NUMBER FROM 1 TO " << a << " is " << sum << endl;
+    
+    cout << "ENTER A NUMBER: ";
+    cin >> a;
+    }
+    else
+    {
+        cout << " GOODBYE ";
+        break;
+    }
+}
+return 0;
+}
