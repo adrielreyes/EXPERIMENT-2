@@ -1,0 +1,24 @@
+// Problem 8
+// Adriel Brian L. Reyes
+// 1 - 12 
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int number;
+
+    cout << "Please enter a postive number: ";
+    cin >> number;
+
+    for (int i = 1; i <= 10; ++i) 
+    {
+        cout << number << " * " << i << " = " << number * i << endl;
+    }
+    {
+        cout << " WOAHHHH ";
+    }
+    
+    return 0;
+}
