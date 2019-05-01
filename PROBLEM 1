@@ -1,0 +1,53 @@
+// Problem 1
+// Adriel Brian L. Reyes
+// 1 - 12 
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+char package;
+int hours;
+
+cout << "PLease select a package: \n" << endl;
+cout << "Package\t\tCost\t\tHours Provided\t\tExtra Hours" << endl;
+cout << "A\t\t995 Pesos\t\t10\t\t\t20 per hour" << endl;
+cout << "B\t\t1495 Pesos\t\t20\t\t\t10 per hour" << endl;
+cout << "C\t\t1995 Pesos\t\tUnlimited\t\tUnlimited" << endl;
+
+cout << "\nEnter the package purchased: ";
+cin >> package;
+while(package!= 'A' && package!='a' && package!='B' && package!='b'&&
+package!='C' && package!='c')
+{cout <<"\nError! You must select package A, B, or C. ";
+cout <<"Enter the package purchased: ";
+cin >> package;}
+
+cout <<"\nEnter the number of hours used: ";
+cin >>hours;
+cin.get();
+while(hours < 0 || hours > 744)
+{cout <<"\nError! Hours cannot be negative or exceed 744. \n\nYou must enter appropriate hours.";
+cout <<"\n\nEnter the number of hours used. ";
+cin >> hours;}
+
+if(package == 'A' || package == 'a')
+{if (hours <= 10)
+cout<<"\nYour monthly fee is: 995 Pesos";
+else cout<<"\nYour monthly fee is: Pesos"<<995+(hours-10)*2;}
+
+if(package == 'B' || package == 'b')
+{if (hours <= 20)
+cout<<"\nYour monthly fee is: 1495 Pesos";
+else cout<<"\nYour monthly fee is: Pesos"<<1495 + hours - 20;}
+
+if(package == 'C' || package == 'c')
+cout<<"\nYour monthly fee is: 1995";
+
+cin.get();
+return 0;
+}
