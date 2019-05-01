@@ -1,0 +1,33 @@
+// Problem 2
+// Adriel Brian L. Reyes
+// 1 - 12 
+
+
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	double g = 1.10;
+	double gallons;
+	double RB;
+
+	
+	cout << "Please enter the number of gallons consumed: \n\n";
+	cin >> gallons;
+	cout << "Please enter the remaining balance: \n\n";
+	cin >> RB;
+	
+	if (RB == 0 )
+	{
+	cout << " The total bill is " << g*gallons + 35;
+	}
+	else 
+	{
+	cout << " The total bill is " << g*gallons + 35 + RB + 20;
+	}
+	
+	cout << "\n\n Thank You! Use water efficiently";
+	return 0;
+}
